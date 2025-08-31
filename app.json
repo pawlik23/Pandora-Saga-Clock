@@ -1,4 +1,3 @@
-
 {
   "expo": {
     "name": "MMO Clock",
@@ -12,13 +11,19 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "package": "com.myclock.mmoclock"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0e174d09-9c51-4da2-ac63-21f541cfacdc"
+      }
     }
   }
 }
-    
