@@ -1,15 +1,29 @@
-
 {
   "cli": {
-    "appVersionSource": "local"
+    "version": ">= 3.0.0"
   },
   "build": {
     "production": {
-      "distribution": "internal",
       "android": {
-        "buildType": "apk"
+        "workflow": "managed",
+        "buildType": "apk",
+        "releaseChannel": "production",
+        "gradleCommand": ":app:assembleRelease",
+        "credentials": {
+          "keystore": "auto"
+        }
+      }
+    },
+    "development": {
+      "android": {
+        "workflow": "managed",
+        "buildType": "apk",
+        "releaseChannel": "development",
+        "gradleCommand": ":app:assembleDebug",
+        "credentials": {
+          "keystore": "auto"
+        }
       }
     }
   }
 }
-    
