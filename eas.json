@@ -5,7 +5,7 @@
   },
   "build": {
     "production": {
-      "distribution": "local",
+      "distribution": "internal",
       "android": {
         "buildType": "apk"
       }
