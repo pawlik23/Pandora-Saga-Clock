@@ -1,11 +1,24 @@
+
 {
   "expo": {
     "name": "MMO Clock",
     "slug": "mmo-clock",
     "version": "1.0.0",
-    "platforms": ["android"],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
     "android": {
-      "package": "com.twojanazwa.mmo_clock"
+      "package": "com.myclock.mmoclock"
     }
   }
 }
+    
