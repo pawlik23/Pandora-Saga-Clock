@@ -1,8 +1,9 @@
 {
   "build": {
     "production": {
+      "distribution": "store",
       "android": {
-        "workflow": "managed"
+        "buildType": "apk"
       }
     }
   }
