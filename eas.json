@@ -5,24 +5,12 @@
   "build": {
     "production": {
       "android": {
-        "workflow": "managed",
-        "buildType": "apk",
-        "releaseChannel": "production",
-        "gradleCommand": ":app:assembleRelease",
-        "credentials": {
-          "keystore": "auto"
-        }
+        "buildType": "apk"
       }
     },
     "development": {
       "android": {
-        "workflow": "managed",
-        "buildType": "apk",
-        "releaseChannel": "development",
-        "gradleCommand": ":app:assembleDebug",
-        "credentials": {
-          "keystore": "auto"
-        }
+        "buildType": "apk"
       }
     }
   }
