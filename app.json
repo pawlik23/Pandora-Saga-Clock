@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "MMO Clock",
+    "slug": "mmo-clock",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.twojanazwa.mmo_clock"
+    }
+  }
+}

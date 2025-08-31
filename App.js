@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-// 1h IG = 7m30s RL → 1 sekunda realna = 8 sekund w grze
 const INGAME_SECONDS_PER_REAL_SECOND = 8;
 const INGAME_DAY_SECONDS = 24 * 60 * 60;
 
@@ -36,7 +35,6 @@ export default function App() {
   );
 }
 
-// ---- helpers ----
 function getGameSeconds() {
   const now = Date.now();
   const deltaRealSec = Math.floor(now / 1000);
@@ -54,7 +52,6 @@ function formatGameTime(gameSeconds) {
 function getDayNightCountdown(gameSeconds) {
   const nightStart = 11 * 3600;
   const nightEnd = 21 * 3600;
-
   let toNight, toDay;
 
   if (gameSeconds < nightStart) {
